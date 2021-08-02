@@ -1,0 +1,17 @@
+{
+  "logConfig": {
+    "logFolder": "logs",
+    "logFile": "NodeWinstonApp-%DATE%.log",
+    "logLevel": "debug"
+  },
+  "authConfig": {
+    "secret": "fdfhfjdfdjfdjerwrereresaassa2dd@ddds",
+    "jwtTokenName": "rexAuth",
+    "httponly": true,
+    "secure": false
+  },
+  "testData": {
+    "dir": "testData",
+    "user": "user.json"
+  }
+}
