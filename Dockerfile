@@ -1,11 +1,11 @@
-FROM    node:latest-alpine
+FROM node:9-alpine
 
 WORKDIR /app
 #
 COPY ./src /app
 
 #
-#RUN npm config set unsafe-perm true
+RUN npm config set unsafe-perm true
 
 # pm2
 RUN npm install pm2 -g
