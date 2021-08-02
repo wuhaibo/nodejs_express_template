@@ -5,8 +5,11 @@ WORKDIR /app
 COPY ./src /app
 RUN npm install
 
+# pm2
+RUN npm install pm2 -g
+
 # port
 EXPOSE  80
 
 # run 
-CMD ["npm", "run", "start" ]
+CMD ["pm2-runtime", "./bin/www" ]
