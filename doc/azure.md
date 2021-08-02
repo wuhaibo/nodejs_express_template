@@ -3,3 +3,5 @@ az acr task create --registry $ACR_NAME --name taskNodejsExpressTemplate --image
 
 # run build task
 az acr task run --registry $ACR_NAME --name taskNodejsExpressTemplate --resource-group erp_nodejs
+
+# list item in acr

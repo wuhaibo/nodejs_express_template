@@ -1,12 +1,16 @@
-FROM    node:9-alpine
+FROM    node:latest-alpine
 
 WORKDIR /app
 #
 COPY ./src /app
-RUN npm install
+
+RUN npm config set unsafe-perm true
 
 # pm2
 RUN npm install pm2 -g
+
+RUN npm install
+
 
 # port
 EXPOSE  80
